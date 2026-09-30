@@ -7,10 +7,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGetTripKey(t *testing.T) {
-	assert.Equal(t, "passenger_1OUTBOUND", GetTripKey("passenger_1", "OUTBOUND"))
-}
-
 func TestDurationToString(t *testing.T) {
 	assert.Equal(t, "01:00", DurationToString(time.Hour))
 	assert.Equal(t, "09:00", DurationToString(time.Hour*9))

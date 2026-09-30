@@ -1,13 +1,15 @@
+github.com/google/go-cmp v0.7.0 h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=
+github.com/google/go-cmp v0.7.0/go.mod h1:pXiqmnSA92OHEEa9HXL2W4E7lf9JzCmGVUdgjX3N/iU=
 github.com/govalues/decimal v0.1.36 h1:dojDpsSvrk0ndAx8+saW5h9WDIHdWpIwrH/yhl9olyU=
 github.com/govalues/decimal v0.1.36/go.mod h1:Ee7eI3Llf7hfqDZtpj8Q6NCIgJy1iY3kH1pSwDrNqlM=
 github.com/rickb777/date/v2 v2.4.1 h1:bB+bOLN1+AVDdEKUz89cYg3N1cR1fYFHtpGYmqKzO5g=
 github.com/rickb777/date/v2 v2.4.1/go.mod h1:A8e9i6uvJQUZOUUb+zmskYry5QNKFOQmZkCuhmVxSA8=
+github.com/rickb777/expect v1.3.4 h1:b51hSqdTDdH8xY2y6DgHRNkxKtsAAKIQFNZ7Lf0PbOA=
+github.com/rickb777/expect v1.3.4/go.mod h1:YQhUXHEeFrxMrH/NNwISBCgt+A82EC4Xvx3E5/2q+DE=
 github.com/rickb777/period v1.2.1 h1:7w7ssMT0anbA6yFxCWUPVFZX1c/1kKR6OolPEJkslJU=
 github.com/rickb777/period v1.2.1/go.mod h1:QkzN/ec7c1vcp0/smCTqHKKmChkm+anFfLe3y0GuiXY=
 github.com/rickb777/plural/v2 v2.1.1 h1:PnnkkMn62hxJIfdBWaPKH3jUFJQliqqGEqHAYhnINVs=
 github.com/rickb777/plural/v2 v2.1.1/go.mod h1:VQ7T01f3Xi9EqnIE0vMBw3351Bj2xWVle4TOccdlB7I=
-github.com/samber/lo v1.53.0 h1:t975lj2py4kJPQ6haz1QMgtId2gtmfktACxIXArw3HM=
-github.com/samber/lo v1.53.0/go.mod h1:4+MXEGsJzbKGaUEQFKBq2xtfuznW9oz/WrgyzMzRoM0=
 github.com/stretchr/objx v0.5.3 h1:jmXUvGomnU1o3W/V5h2VEradbpJDwGrzugQQvL0POH4=
 github.com/stretchr/objx v0.5.3/go.mod h1:rDQraq+vQZU7Fde9LOZLr8Tax6zZvy4kuNKF+QYS+U0=
 github.com/stretchr/testify v1.12.1 h1:EuwCh5fleGS7H32xRwO3wRGT7DxrDhLAT6FF8MpWDWE=
@@ -18,7 +20,3 @@ golang.org/x/exp v0.0.0-20260908205506-85c1c2202aba h1:Ck8QetSgk912qxWLMCKxd0in+
 golang.org/x/exp v0.0.0-20260908205506-85c1c2202aba/go.mod h1:50RgIsmK7OwqzTTeqcSXQW8SswW0o8fRcDxmqGluJ8E=
 golang.org/x/sync v0.23.0 h1:KameEIfc1IkluZyXWLn39Wd4tURc6GbCiISGiZm2bQk=
 golang.org/x/sync v0.23.0/go.mod h1:sUUOizhqBxiL6pEWpqNLUiaJn1ShEbZ6BBqskPbjZm0=
-golang.org/x/text v0.22.0 h1:bofq7m3/HAFvbF51jz3Q9wLg3jkvSPuiZu/pD1XwgtM=
-golang.org/x/text v0.22.0/go.mod h1:YRoo4H8PVmsu+E3Ou7cqLVH8oXWIHVoX0jqUWALQhfY=
-golang.org/x/text v0.42.0 h1:JbOZXgfeCPU9gacVtYliJqOhD+zhrEqK4LfdpmlUZqI=
-golang.org/x/text v0.42.0/go.mod h1:ojzP1Z+2QtioaF8DTtO8K5q7JWVVYwZKenzujK0Zd0E=

@@ -9,10 +9,6 @@ import (
 	"unicode"
 )
 
-func GetTripKey(passengerID, direction string) string {
-	return fmt.Sprintf("%s%s", passengerID, direction)
-}
-
 func DurationToString(d time.Duration) string {
 	return fmt.Sprintf("%02d", int(math.Floor(d.Minutes()/60))) + ":" + fmt.Sprintf("%02d", int(math.Mod(d.Minutes(), 60)))
 }
