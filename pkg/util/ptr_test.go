@@ -15,6 +15,14 @@ func TestPtr(t *testing.T) {
 	assert.Equal(t, &i, Ptr(123))
 }
 
+func TestPtr_PointsAtACopy(t *testing.T) {
+	v := 1
+	p := Ptr(v)
+	v = 2
+
+	assert.Equal(t, 1, *p)
+}
+
 func TestVal(t *testing.T) {
 	var tt time.Time
 	var i int
@@ -35,6 +43,17 @@ func TestStrZeroPtr(t *testing.T) {
 	assert.Equal(t, &v, StrZeroPtr("a"))
 }
 
+func TestStrZeroPtr_WhitespaceIsNotEmpty(t *testing.T) {
+	v := "  "
+
+	assert.Equal(t, &v, StrZeroPtr("  "))
+}
+
+func TestBoolValOrDefault_FalseWinsOverDefault(t *testing.T) {
+	v := false
+	assert.Equal(t, false, BoolValOrDefault(&v, true))
+}
+
 func TestBoolValOrDefault_Default(t *testing.T) {
 	assert.Equal(t, true, BoolValOrDefault(nil, true))
 }
@@ -51,6 +70,9 @@ func TestIntPtrOrDefault(t *testing.T) {
 
 	a.Nil(IntZeroPtr(0))
 	a.Equal(&v, IntZeroPtr(v))
+
+	n := int32(-1)
+	a.Equal(&n, IntZeroPtr(n))
 }
 
 func TestPtrF(t *testing.T) {

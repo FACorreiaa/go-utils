@@ -1,6 +1,7 @@
 package util
 
 import (
+	"math"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -61,4 +62,12 @@ func TestRoundHalfUpToScale_ProducesAStableSerialisation(t *testing.T) {
 	raw := 100.0 / 365.0 * 100.0
 
 	assert.Equal(t, 27.39726, RoundHalfUpToScale(raw, 6))
+}
+
+// math.Round keeps the sign, so a small negative that rounds to zero comes back
+// as negative zero, which fmt prints as "-0". Callers that format the result
+// must not assume a positive zero.
+func TestRoundHalfUpToScale_KeepsNegativeZero(t *testing.T) {
+	assert.True(t, math.Signbit(RoundHalfUpToScale(-0.04, 1)))
+	assert.True(t, math.Signbit(RoundHalfUpToScale(math.Copysign(0, -1), 1)))
 }
